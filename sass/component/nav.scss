@@ -1,0 +1,109 @@
+.nav {
+	background-color: $color-white;
+	font-family: Prompt, sans-serif;
+	margin-bottom: 4rem;
+
+	&__contain {
+		display: flex;
+		flex-direction: row;
+		gap: 5rem;
+
+		&-box {
+			display: flex;
+			gap: 2rem;
+			flex-direction: column;
+		}
+	}
+
+	&__heading {
+		font-size: $font-size-super-large;
+		color: $color-blue-dark;
+		font-weight: $font-bold;
+
+		&--secondary {
+			font-size: $font-size-default;
+			font-weight: $font-bold;
+			color: $color-blue-dark;
+			margin: 1.6rem 0;
+		}
+	}
+
+	&__list {
+		list-style: none;
+		padding-right: 9.6rem;
+	}
+
+	&__item {
+		font-weight: $font-default;
+		font-size: $font-size-small;
+		line-height: 1.4;
+		color: $color-blue-dark;
+	}
+
+	&__shape {
+		display: flex;
+		gap: 4rem;
+
+		&-info {
+			position: relative;
+		}
+
+		&-size {
+			position: absolute;
+			border-bottom: solid 1px $color-blue-dark;
+			color: $color-blue-dark;
+			padding: 0 0.3rem;
+
+			&--width-regular {
+				transform: rotate(-28deg);
+				top: -0.9rem;
+				left: -1.4rem;
+			}
+			&--long-regular,
+			&--long-dice,
+			&--long-half {
+				transform: rotate(2deg);
+				top: -2rem;
+				left: 2.8rem;
+			}
+			&--height-regular,
+			&--height-dice,
+			&--height-half {
+				transform: rotate(63deg);
+				top: 0.4rem;
+				left: 6rem;
+			}
+			&--width-dice {
+				transform: rotate(-28deg);
+				top: -1.2rem;
+				left: -1.4rem;
+			}
+
+			&--width-regular {
+				transform: rotate(-28deg);
+				top: -0.9rem;
+				left: -1.4rem;
+			}
+
+			&--width-half {
+				transform: rotate(-30deg);
+				top: -1.4rem;
+				left: -1.8rem;
+			}
+		}
+
+		&--description {
+			color: $color-blue-light;
+			font-weight: $font-medium;
+			margin-top: 1.6rem;
+			text-align: center;
+			font-size: 1.5rem;
+		}
+	}
+
+	&__learn-more {
+		color: $color-white;
+		font-size: $font-size-default;
+		margin-top: 1.4rem;
+	}
+}

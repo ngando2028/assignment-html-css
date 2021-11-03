@@ -1,0 +1,149 @@
+body {
+	padding: 0 3rem;
+	// background-color: $color-black;
+}
+
+.container {
+	max-width: 144rem;
+	margin: 0 auto;
+}
+
+.hero {
+	// background: $color;
+	background-image: url(../img/BG.png);
+	height: 100%;
+	position: relative;
+	background-size: cover;
+	&__box {
+		padding: 2.6rem 9.6rem;
+	}
+
+	&__contain {
+		display: flex;
+
+		&-info {
+			margin-top: 6rem;
+			display: flex;
+			flex-grow: 1;
+			flex-direction: column;
+			color: $color-white-light;
+			gap: 3rem;
+			font-family: Prompt, sans-serif;
+
+			&--logan {
+				font-weight: $font-bold;
+				font-size: $font-size-large;
+				line-height: 1.2;
+			}
+
+			&--description {
+				font-size: $font-size-default;
+				color: rgba($color-white, $alpha: 0.8);
+				line-height: 1.4;
+			}
+		}
+
+		&-data {
+			display: flex;
+			flex-direction: row;
+			gap: 3.2rem;
+			color: $color-white;
+			font-family: Montserrat, sans-serif;
+			position: relative;
+
+			&--value {
+				font-weight: $font-bold;
+				font-size: $font-size-medium;
+				line-height: 1.2;
+				margin-bottom: 1rem;
+			}
+
+			&-desription {
+				font-weight: $font-default;
+				font-size: $font-size-default;
+				color: rgba($color-white, $alpha: 0.8);
+				display: flex;
+				gap: 0.6rem;
+			}
+		}
+
+		&-img {
+			justify-content: center;
+			right: 8rem;
+			margin-top: 14rem;
+			position: relative;
+
+			&--ice {
+				position: absolute;
+				top: 24%;
+				right: -12rem;
+			}
+
+			&--ice-group {
+				position: absolute;
+				bottom: -10rem;
+				right: -10rem;
+			}
+		}
+	}
+
+	&__call {
+		position: absolute;
+		top: 4.4rem;
+		right: 9.6rem;
+		text-align: center;
+
+		&--value {
+			display: inline-block;
+			text-decoration: none;
+			font-size: $font-size-default;
+			font-family: Prompt, sans-serif;
+			font-weight: $font-large;
+			color: $color-blue;
+		}
+
+		&--icon {
+			margin-right: 1rem;
+		}
+	}
+
+	&__scrolldown {
+		position: absolute;
+		bottom: 20%;
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+	&__quote {
+		max-width: 114rem;
+		margin: 10rem auto;
+		position: relative;
+
+		&--heading {
+			font-size: $font-size-super-large;
+			color: $color-blue-dark;
+			font-family: Prompt, sans-serif;
+			font-weight: $font-super-bold;
+			text-align: center;
+			line-height: 1.2;
+			letter-spacing: 1px;
+			padding: 0 10rem;
+		}
+	}
+
+	&__ice {
+		&--img {
+			position: absolute;
+		}
+		&--large {
+			height: 200px;
+			bottom: 10rem;
+			left: 9rem;
+		}
+
+		&--small {
+			bottom: -12rem;
+			right: 6rem;
+		}
+	}
+}
