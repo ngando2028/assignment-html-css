@@ -55,9 +55,8 @@
 
 	&__description {
 		list-style: none;
-
+		font-size: $font-size-small;
 		&--detail {
-			font-size: $font-size-small;
 			font-weight: $font-default;
 			color: $color-blue-light;
 		}

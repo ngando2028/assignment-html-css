@@ -147,7 +147,8 @@ body {
     .nav__contain-box {
       display: flex;
       gap: 2rem;
-      flex-direction: column; }
+      flex-direction: column;
+      padding: 0 2rem; }
   .nav__heading {
     font-size: 5.4rem;
     color: #043c9c;
@@ -295,9 +296,9 @@ body {
       color: #043c9c;
       margin: 2rem 0; }
   .flake__description {
-    list-style: none; }
+    list-style: none;
+    font-size: 1.7rem; }
     .flake__description--detail {
-      font-size: 1.7rem;
       font-weight: 400;
       color: #5c7392; }
   .flake__shape-img {
@@ -485,6 +486,8 @@ body {
 @media only screen and (max-width: 37.5em) {
   .container {
     overflow: hidden; }
+  body {
+    padding: 0; }
   .hero__box {
     padding: 2rem 1.5rem; }
   .hero__logo--img img {
@@ -545,10 +548,11 @@ body {
   .nav__item {
     font-size: 1.4rem; } }
 
-.btn {
-  padding: 1.2rem 1.6rem; }
-  .btn--blue {
-    padding: 1rem 3rem; }
+@media only screen and (max-width: 37.5em) {
+  .btn {
+    padding: 1.2rem 1.6rem; }
+    .btn--blue {
+      padding: 1rem 3rem; } }
 
 @media only screen and (max-width: 37.5em) {
   .depenser {
@@ -558,7 +562,7 @@ body {
       margin-top: 20rem;
       padding: 0; }
     .depenser-box {
-      padding: 1rem;
+      padding: 2rem;
       gap: 2rem;
       order: 2; }
     .depenser-img {
@@ -577,7 +581,105 @@ body {
         left: 26rem;
         max-width: 26px; }
     .depenser__heading {
-      font-size: 2rem;
-      margin-top: 15rem; }
+      font-size: 2.4rem;
+      margin-top: 16rem;
+      max-width: 100%; }
     .depenser__description--detail {
       font-size: 1.4rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .flake-contain {
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 2rem 10rem 2rem; }
+  .flake-box {
+    margin-top: 5rem;
+    padding: 0; }
+  .flake__heading {
+    font-size: 2.4rem; }
+    .flake__heading--secondary {
+      font-size: 1.6rem; }
+  .flake__description {
+    font-size: 1.4rem; }
+  .flake-img__ice {
+    display: none; }
+  .flake-img__flake {
+    max-width: 300px; }
+  .flake-img__arrow {
+    max-width: 25px;
+    bottom: 13rem;
+    right: 0rem; }
+  .flake-img__seafood {
+    bottom: 1rem;
+    right: -6rem;
+    transform: scale(0.4); } }
+
+@media only screen and (max-width: 37.5em) {
+  .video-contain {
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/video-column.png); }
+  .video__heading {
+    font-size: 2.4rem;
+    padding: 0 3rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .customer__logo {
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 0 2rem;
+    justify-content: space-evenly; }
+    .customer__logo img {
+      width: 30%; }
+  .feedback-contain {
+    padding: 2.4rem 2rem; }
+  .feedback__sign {
+    font-size: 4.4rem; }
+  .feedback__quote {
+    font-family: Mulish, sans-serif;
+    font-size: 1.5rem;
+    color: #13284c;
+    font-weight: 400;
+    line-height: 1.5; }
+  .feedback__auth--name {
+    font-weight: 500; }
+  .feedback__auth--company {
+    color: #a3a5ad;
+    margin-bottom: 2rem; }
+  .feedback__auth--avatar {
+    transform: scale(0.7); } }
+
+@media only screen and (max-width: 37.5em) {
+  .footer__img {
+    display: none; }
+  .footer__contain {
+    padding: 3rem 2rem;
+    gap: 3rem; }
+  .footer__heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: Mulish, sans-serif; }
+    .footer__heading--secondary {
+      padding: 2rem 0;
+      font-size: 1.6rem; }
+  .footer__info {
+    flex-direction: column; }
+    .footer__info--detail, .footer__info--address {
+      font-size: 1.4rem; }
+    .footer__info--title {
+      width: 25%; }
+    .footer__info--detail {
+      gap: 0; }
+    .footer__info--social {
+      text-align: start;
+      margin-top: 6rem;
+      align-self: flex-start; }
+  .footer__copyright {
+    font-size: 1.4rem; }
+  .footer__input input {
+    font-size: 1.4rem; }
+  .footer__input--send {
+    font-size: 1.4rem;
+    font-weight: 700;
+    top: 4px;
+    right: 0.3rem;
+    color: #000;
+    padding: 1.2rem 3rem; } }

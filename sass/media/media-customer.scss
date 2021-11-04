@@ -1,0 +1,47 @@
+@media only screen and (max-width: 37.5em) {
+	.customer {
+		&__logo {
+			flex-wrap: wrap;
+			gap: 4rem;
+			padding: 0 2rem;
+			justify-content: space-evenly;
+
+			img {
+				width: 30%;
+			}
+		}
+	}
+
+	.feedback {
+		&-contain {
+			padding: 2.4rem 2rem;
+		}
+
+		&__sign {
+			font-size: 4.4rem;
+		}
+
+		&__quote {
+			font-family: Mulish, sans-serif;
+			font-size: 1.5rem;
+			color: #13284c;
+			font-weight: 400;
+			line-height: 1.5;
+		}
+
+		&__auth {
+			&--name {
+				font-weight: 500;
+			}
+
+			&--company {
+				color: #a3a5ad;
+				margin-bottom: 2rem;
+			}
+
+			&--avatar {
+				transform: scale(0.7);
+			}
+		}
+	}
+}

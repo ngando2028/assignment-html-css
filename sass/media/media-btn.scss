@@ -1,7 +1,9 @@
-.btn {
-	padding: 1.2rem 1.6rem;
+@media only screen and (max-width: 37.5em) {
+	.btn {
+		padding: 1.2rem 1.6rem;
 
-	&--blue {
-		padding: 1rem 3rem;
+		&--blue {
+			padding: 1rem 3rem;
+		}
 	}
 }

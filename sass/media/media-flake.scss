@@ -1,0 +1,48 @@
+@media only screen and (max-width: 37.5em) {
+	.flake {
+		&-contain {
+			flex-direction: column;
+			align-items: center;
+			padding: 10rem 2rem 10rem 2rem;
+		}
+
+		&-box {
+			margin-top: 5rem;
+			padding: 0;
+		}
+
+		&__heading {
+			font-size: 2.4rem;
+
+			&--secondary {
+				font-size: 1.6rem;
+			}
+		}
+
+		&__description {
+			font-size: 1.4rem;
+		}
+
+		&-img {
+			&__ice {
+				display: none;
+			}
+
+			&__flake {
+				max-width: 300px;
+			}
+
+			&__arrow {
+				max-width: 25px;
+				bottom: 13rem;
+				right: 0rem;
+			}
+
+			&__seafood {
+				bottom: 1rem;
+				right: -6rem;
+				transform: scale(0.4);
+			}
+		}
+	}
+}
