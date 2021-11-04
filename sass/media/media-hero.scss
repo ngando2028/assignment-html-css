@@ -1,0 +1,95 @@
+@media only screen and (max-width: 37.5em) {
+	.container {
+		overflow: hidden;
+	}
+
+	.hero {
+		&__box {
+			padding: 2rem 1.5rem;
+		}
+
+		&__logo {
+			&--img img {
+				max-width: 63px;
+			}
+		}
+
+		&__contain {
+			flex-direction: column;
+
+			&-info {
+				&--logan {
+					font-size: 2.2rem;
+					line-height: 1.3;
+				}
+
+				&--description {
+					font-size: 1.4rem;
+				}
+			}
+
+			&-data {
+				&--value {
+					font-size: 2.4rem;
+				}
+			}
+
+			&-img {
+				right: -1rem;
+				margin-top: 6rem;
+
+				&--gti {
+					max-width: 250px;
+					margin-top: 12rem;
+				}
+
+				&--ice {
+					display: none;
+				}
+
+				&--ice-group {
+					max-width: 195px;
+					bottom: -3rem;
+					right: -4rem;
+				}
+			}
+		}
+
+		&__call {
+			&--icon {
+				margin-right: 0.8rem;
+			}
+
+			&--value {
+				font-size: 1.4rem;
+			}
+		}
+
+		&__quote {
+			margin: 2rem auto;
+
+			&--heading {
+				font-size: 2rem;
+				font-weight: $font-bold;
+				letter-spacing: normal;
+				padding: 0;
+			}
+		}
+
+		&__scrolldown {
+			display: none;
+		}
+
+		&__ice {
+			&--large {
+				display: none;
+			}
+
+			&--small {
+				max-width: 87px;
+				bottom: -10rem;
+				right: -2rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+@media only screen and (max-width: 37.5em) {
+	.depenser {
+		padding: 0;
+
+		&-contain {
+			flex-direction: column;
+			margin-top: 20rem;
+			padding: 0;
+		}
+
+		&-box {
+			padding: 1rem;
+			gap: 2rem;
+			order: 2;
+		}
+
+		&-img {
+			order: 1;
+
+			&__ill {
+				max-width: 240px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			&__coca {
+				bottom: -20rem;
+				left: 17rem;
+				transform: scale(0.5);
+			}
+
+			&__arrow {
+				bottom: -7rem;
+				left: 26rem;
+				max-width: 26px;
+			}
+		}
+
+		&__heading {
+			font-size: 2rem;
+			margin-top: 15rem;
+		}
+
+		&__description--detail {
+			font-size: 1.4rem;
+		}
+	}
+}

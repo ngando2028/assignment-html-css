@@ -1,6 +1,20 @@
 @import "base/base.scss";
 @import "base/variables.scss";
+@import "base/common.scss";
 
 @import "component/hero.scss";
 @import "component/button.scss";
 @import "component/nav.scss";
+@import "component/depenser.scss";
+@import "component/flake.scss";
+@import "component/video.scss";
+@import "component/customer.scss";
+@import "component/feedback.scss";
+@import "component/dots.scss";
+@import "component/footer.scss";
+
+@import "media/media-hero.scss";
+@import "media/media-nav.scss";
+@import "media/media-btn.scss";
+@import "media/media-depenser.scss";
+@import "media/media-flake.scss";

@@ -1,0 +1,10 @@
+.learn-more {
+	color: $color-white;
+	font-size: $font-size-default;
+	margin-top: 1.4rem;
+	font-weight: $font-medium;
+
+	&--white {
+		color: $color-blue;
+	}
+}

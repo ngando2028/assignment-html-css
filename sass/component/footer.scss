@@ -1,0 +1,123 @@
+.footer {
+	background: $color-blue-light-2 url(../img/Bg-footer.png) no-repeat bottom
+		left;
+	font-family: Prompt, sans-serif;
+	color: $color-white;
+	position: relative;
+
+	&__contain {
+		padding: 6rem 9rem;
+		display: flex;
+		flex-direction: column;
+		gap: 7rem;
+	}
+
+	&__info {
+		display: flex;
+
+		&--company {
+			display: flex;
+			flex-direction: column;
+			gap: 2.4rem;
+		}
+
+		&--social {
+			flex: 1;
+			align-self: flex-end;
+			display: block;
+			text-align: end;
+		}
+
+		&--list {
+			display: flex;
+			gap: 2rem;
+		}
+		&--contact {
+			text-transform: uppercase;
+			display: block;
+		}
+
+		&--detail,
+		&--address {
+			font-size: $font-size-default;
+		}
+
+		&--title,
+		&--contact {
+			font-weight: $font-bold;
+			margin-right: 0.5rem;
+		}
+	}
+
+	&__heading {
+		font-size: $font-size-medium;
+		font-weight: $font-bold;
+
+		&--secondary {
+			font-family: Mulish, sans-serif;
+			font-size: $font-size-default;
+			font-weight: $font-large;
+			text-transform: uppercase;
+			padding: 1rem 3rem;
+		}
+	}
+
+	&__input {
+		position: relative;
+
+		&--send {
+			position: absolute;
+			top: 4px;
+			right: 7.8rem;
+			color: #3956fb;
+			text-transform: uppercase;
+			font-size: 1.8rem;
+			font-weight: 800;
+			padding: 0.9rem 5rem;
+		}
+
+		input {
+			font-size: $font-size-default;
+			color: $color-white;
+			padding: 1.6rem;
+			border-radius: 10px;
+			background-color: #7488fc;
+			width: 100%;
+			border: none;
+			display: block;
+			max-width: 550px;
+
+			&:focus {
+				outline: none;
+			}
+
+			&::placeholder {
+				color: rgba($color-white, $alpha: 0.6);
+			}
+
+			&::-webkit-input-placeholder {
+				color: rgba($color-white, $alpha: 0.6);
+			}
+
+			&:-ms-input-placeholder {
+				color: rgba($color-white, $alpha: 0.6);
+			}
+		}
+	}
+
+	&__logo img:not(:last-child) {
+		margin-right: 2rem;
+	}
+
+	&__copyright {
+		font-size: $font-size-default;
+		font-weight: $font-default;
+		color: rgba($color-white, 0.5);
+	}
+
+	&__img {
+		position: absolute;
+		top: -8rem;
+		right: 8rem;
+	}
+}

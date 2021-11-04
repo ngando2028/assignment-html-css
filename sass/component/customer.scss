@@ -1,0 +1,20 @@
+.customer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 6rem 0;
+	gap: 6rem;
+
+	&__heading {
+		font-size: 2.4rem;
+		color: $color-blue-dark;
+		font-weight: $font-bold;
+	}
+
+	&__logo {
+		display: flex;
+		gap: 13rem;
+		align-items: center;
+	}
+}
