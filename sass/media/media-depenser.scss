@@ -25,15 +25,14 @@
 			}
 
 			&__coca {
-				bottom: -20rem;
-				left: 17rem;
-				transform: scale(0.5);
+				bottom: -18rem;
+				left: 19rem;
+				transform: scale(0.4);
 			}
 
-			&__arrow {
-				bottom: -7rem;
-				left: 26rem;
-				max-width: 26px;
+			&__ill:hover + &__coca {
+				display: block;
+				animation: 1s ease-out move-circle-depenser-mobile;
 			}
 		}
 
@@ -46,5 +45,25 @@
 		&__description--detail {
 			font-size: 1.4rem;
 		}
+	}
+}
+
+@keyframes move-circle-depenser-mobile {
+	0% {
+		bottom: -10rem;
+		left: 19rem;
+		transform: scale(0);
+	}
+
+	50% {
+		transform: scale(0.2) rotate(120deg);
+		bottom: -13rem;
+		left: 24rem;
+	}
+
+	100% {
+		bottom: -18rem;
+		left: 19rem;
+		transform: scale(0.4);
 	}
 }

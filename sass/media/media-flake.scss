@@ -32,17 +32,38 @@
 				max-width: 300px;
 			}
 
-			&__arrow {
-				max-width: 25px;
-				bottom: 13rem;
-				right: 0rem;
-			}
-
 			&__seafood {
 				bottom: 1rem;
 				right: -6rem;
 				transform: scale(0.4);
+				display: none;
+			}
+
+			&__flake:hover + &__seafood {
+				display: block;
+				animation: 1s ease-out move-circle-flake-mobile;
 			}
 		}
+	}
+}
+
+@keyframes move-circle-flake-mobile {
+	0% {
+		bottom: 7rem;
+		right: -6rem;
+		transform: scale(0);
+	}
+
+	50% {
+		transform: scale(0.2) rotate(120deg);
+		bottom: 5rem;
+		right: -9rem;
+		// transform: scale(0.2);
+	}
+
+	100% {
+		bottom: 1rem;
+		right: -6rem;
+		transform: scale(0.4);
 	}
 }

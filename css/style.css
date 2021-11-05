@@ -243,18 +243,33 @@ body {
       position: absolute;
       top: 2rem;
       left: -4rem; }
-    .depenser-img__arrow {
-      position: absolute;
-      bottom: 2rem;
-      left: 50rem; }
     .depenser-img__coca {
+      display: none;
       position: absolute;
       bottom: -13rem;
       left: 40rem;
       border-radius: 50%;
       border: solid 1.6rem #fff;
       transform: scale(0.8);
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      transition: all 0.3s; }
+    .depenser-img__ill:hover + .depenser-img__coca {
+      display: block;
+      animation: 1s ease-out move-circle-depenser; }
+
+@keyframes move-circle-depenser {
+  0% {
+    bottom: 2rem;
+    left: 40rem;
+    transform: scale(0); }
+  50% {
+    transform: scale(0.4) rotate(120deg);
+    bottom: -3rem;
+    left: 46rem; }
+  100% {
+    bottom: -13rem;
+    left: 40rem;
+    transform: scale(0.8); } }
 
 .flake {
   font-family: Prompt, sans-serif; }
@@ -268,11 +283,8 @@ body {
       position: absolute;
       top: -18rem;
       left: 0; }
-    .flake-img__arrow {
-      position: absolute;
-      bottom: 30rem;
-      right: 0; }
     .flake-img__seafood {
+      display: none;
       position: absolute;
       bottom: 13rem;
       right: -4rem;
@@ -280,6 +292,9 @@ body {
       border: solid 1.6rem #fff;
       transform: scale(0.8);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+    .flake-img__flake:hover + .flake-img__seafood {
+      display: block;
+      animation: 1s ease-out move-circle-flake; }
   .flake-box {
     display: flex;
     flex-direction: column;
@@ -309,6 +324,20 @@ body {
     font-size: 1.4rem;
     font-weight: 500;
     margin-top: 1rem; }
+
+@keyframes move-circle-flake {
+  0% {
+    bottom: 26rem;
+    right: -2rem;
+    transform: scale(0); }
+  50% {
+    transform: scale(0.4) rotate(120deg);
+    bottom: 20rem;
+    right: -8rem; }
+  100% {
+    bottom: 13rem;
+    right: -4rem;
+    transform: scale(0.8); } }
 
 .video {
   height: 630px; }
@@ -573,19 +602,32 @@ body {
         left: 50%;
         transform: translate(-50%, -50%); }
       .depenser-img__coca {
-        bottom: -20rem;
-        left: 17rem;
-        transform: scale(0.5); }
-      .depenser-img__arrow {
-        bottom: -7rem;
-        left: 26rem;
-        max-width: 26px; }
+        bottom: -18rem;
+        left: 19rem;
+        transform: scale(0.4); }
+      .depenser-img__ill:hover + .depenser-img__coca {
+        display: block;
+        animation: 1s ease-out move-circle-depenser-mobile; }
     .depenser__heading {
       font-size: 2.4rem;
       margin-top: 16rem;
       max-width: 100%; }
     .depenser__description--detail {
       font-size: 1.4rem; } }
+
+@keyframes move-circle-depenser-mobile {
+  0% {
+    bottom: -10rem;
+    left: 19rem;
+    transform: scale(0); }
+  50% {
+    transform: scale(0.2) rotate(120deg);
+    bottom: -13rem;
+    left: 24rem; }
+  100% {
+    bottom: -18rem;
+    left: 19rem;
+    transform: scale(0.4); } }
 
 @media only screen and (max-width: 37.5em) {
   .flake-contain {
@@ -605,11 +647,25 @@ body {
     display: none; }
   .flake-img__flake {
     max-width: 300px; }
-  .flake-img__arrow {
-    max-width: 25px;
-    bottom: 13rem;
-    right: 0rem; }
   .flake-img__seafood {
+    bottom: 1rem;
+    right: -6rem;
+    transform: scale(0.4);
+    display: none; }
+  .flake-img__flake:hover + .flake-img__seafood {
+    display: block;
+    animation: 1s ease-out move-circle-flake-mobile; } }
+
+@keyframes move-circle-flake-mobile {
+  0% {
+    bottom: 7rem;
+    right: -6rem;
+    transform: scale(0); }
+  50% {
+    transform: scale(0.2) rotate(120deg);
+    bottom: 5rem;
+    right: -9rem; }
+  100% {
     bottom: 1rem;
     right: -6rem;
     transform: scale(0.4); } }
@@ -679,7 +735,7 @@ body {
   .footer__input--send {
     font-size: 1.4rem;
     font-weight: 700;
-    top: 4px;
+    top: 2px;
     right: 0.3rem;
     color: #000;
     padding: 1.2rem 3rem; } }

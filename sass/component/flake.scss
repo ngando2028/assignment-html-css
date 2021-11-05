@@ -16,13 +16,8 @@
 			left: 0;
 		}
 
-		&__arrow {
-			position: absolute;
-			bottom: 30rem;
-			right: 0;
-		}
-
 		&__seafood {
+			display: none;
 			position: absolute;
 			bottom: 13rem;
 			right: -4rem;
@@ -30,6 +25,11 @@
 			border: solid 1.6rem #fff;
 			transform: scale(0.8);
 			box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+		}
+
+		&__flake:hover + &__seafood {
+			display: block;
+			animation: 1s ease-out move-circle-flake;
 		}
 	}
 
@@ -73,5 +73,25 @@
 			font-weight: $font-medium;
 			margin-top: 1rem;
 		}
+	}
+}
+
+@keyframes move-circle-flake {
+	0% {
+		bottom: 26rem;
+		right: -2rem;
+		transform: scale(0);
+	}
+
+	50% {
+		transform: scale(0.4) rotate(120deg);
+		bottom: 20rem;
+		right: -8rem;
+	}
+
+	100% {
+		bottom: 13rem;
+		right: -4rem;
+		transform: scale(0.8);
 	}
 }

@@ -55,20 +55,44 @@
 			left: -4rem;
 		}
 
-		&__arrow {
-			position: absolute;
-			bottom: 2rem;
-			left: 50rem;
-		}
-
 		&__coca {
+			display: none;
 			position: absolute;
 			bottom: -13rem;
 			left: 40rem;
 			border-radius: 50%;
 			border: solid 1.6rem #fff;
 			transform: scale(0.8);
+			// transform: scale(0.2);
 			box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+
+			transition: all 0.3s;
+			// animation: move-circle 2s;
 		}
+
+		&__ill:hover + &__coca {
+			display: block;
+			animation: 1s ease-out move-circle-depenser;
+		}
+	}
+}
+
+@keyframes move-circle-depenser {
+	0% {
+		bottom: 2rem;
+		left: 40rem;
+		transform: scale(0);
+	}
+
+	50% {
+		transform: scale(0.4) rotate(120deg);
+		bottom: -3rem;
+		left: 46rem;
+	}
+
+	100% {
+		bottom: -13rem;
+		left: 40rem;
+		transform: scale(0.8);
 	}
 }
