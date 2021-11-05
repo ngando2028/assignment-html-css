@@ -381,6 +381,8 @@ body {
     display: flex;
     gap: 13rem;
     align-items: center; }
+  .customer .dots {
+    display: none; }
 
 .feedback {
   background-color: #f3faff;
@@ -541,7 +543,7 @@ body {
       .hero__contain-img--ice-group {
         max-width: 195px;
         bottom: -3rem;
-        right: -4rem; }
+        right: 2%; }
   .hero__call--icon {
     margin-right: 0.8rem; }
   .hero__call--value {
@@ -688,6 +690,8 @@ body {
     justify-content: space-evenly; }
     .customer__logo img {
       width: 30%; }
+  .customer .dots {
+    display: flex; }
   .feedback-contain {
     padding: 2.4rem 2rem; }
   .feedback__sign {
